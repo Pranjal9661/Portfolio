@@ -1,0 +1,19 @@
+.nav__list{ 
+    /* display: flex;
+    flex-flow: row wrap;
+    border: 2px;
+    padding: 2px;
+    margin: 2px;
+    position: fixed;
+    top: 0;
+    background-color: blue;
+    width: 100%;
+    color: white; */
+} 
+.portfolio{
+    display: flex;
+    flex-flow: row wrap;
+}
+body{
+    background-color: wheat;
+}
