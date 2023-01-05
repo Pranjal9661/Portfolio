@@ -1,19 +1,83 @@
-.nav__list{ 
-    /* display: flex;
-    flex-flow: row wrap;
-    border: 2px;
-    padding: 2px;
-    margin: 2px;
-    position: fixed;
-    top: 0;
-    background-color: blue;
-    width: 100%;
-    color: white; */
-} 
-.portfolio{
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* Custome Properties  */
+:root{
+    --ff-primary:'Source sans Pro', sans-serif;
+    --ff-seconday:'Source code Pro', monospace;
+
+    --fw-reg: 500;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-ascent: #16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+}
+@media (min-wioth: 600px) {
+    :root{
+        --fs-h1: 4rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 2.25rem;
+        --fs-body: 1.125rem;
+
+    }
+}
+
+/* General Styles  */
+body{
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    border: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+h1,h2,h3{
+    line-height: 1.1;
+    margin: 0;
+}
+h1{font-size: var(--fs-h1);}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+/* strong{
+    font-weight: var(--fw-bold);
+} */
+
+/* Typography */
+.portfolio {
     display: flex;
     flex-flow: row wrap;
 }
-body{
-    background-color: wheat;
+.section__title{
+    margin-bottom: 0.25em;
+}
+.section__title__intro{
+    font-weight: var(--fw-reg);
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+    background: var();
+}
+.section__subtitle__intro,.section__subtitle__about{
+    background: var(--clr-ascent);
+    font-family: var(--ff-seconday);
+    width: 100%;
+
 }
